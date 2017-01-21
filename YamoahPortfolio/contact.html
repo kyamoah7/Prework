@@ -1,11 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<title></title>
-		<script type="text/javascript" src="js/pic.js"></script>
+		<script type="text/javascript" >
+		(function changeButton (){
+	var para = createElement("p");
+	var changeName = getElementbyId("name");
+	var changeLastname = getElementbyId("lastname");
+	var submit = changeName + changeLastname;
+	para.appendChild(sumbit);
+
+
+	})</script>
 		<link rel="stylesheet" type="text/css" href="portfolio.css">
 		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 	</head>
+	<body>
 	<header><h1>Kofi Yamoah</h1>
 		<nav>
 			<ul>
@@ -16,22 +26,23 @@
 			</ul>
 		</nav>
 	</header>
-	<body>
-		<form>
+	
+		<form onsubmit="return false">
 			FIRST NAME:<br>
-			<input type="text" name="firstname" value="">
+			<input type="text" id= "name"name="firstname" value="">
 			<br>
 			LAST NAME:<br>
-			<input type="text" name="lastname" value="">
+			<input type="text" id="lastname"name="lastname" value="">
 			<br>
 			<br>
 			COMMENTS:<br>
-			<textarea rows="4" cols="20"></textarea>
+			<textarea id="info"rows="4" cols="20"></textarea>
 			<br>
 
-			<input type="submit"  value="Submit">
-
+			<input type="submit"  value="Submit" onclick="changeButton">
+			<p id="capital"></p>
 		</form>
+		
 		
 		<ol>
 			<li><img src="images/image1.jpg"></li>
